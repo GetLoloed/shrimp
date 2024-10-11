@@ -1,3 +1,5 @@
+#![cfg_attr(not(debug_assertions), windows_subsystem = "windows")]  // Hide console window in release
+
 use eframe::egui;
 use image::ImageReader;
 use std::io::Cursor;
